@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %} Comentarios {% endblock title %}
+
+{% block contenido %}
+    <h2>hola</h2>
+    <h1>Agregar Comentario</h1>
+    <br/><br/>
+
+    <div class="fomr-group">
+<form method="Comentario">
+            {% csrf_token %}
+            {{ form }}
+            <button class="bt btn-secondary">Agrega tu Comentario</button>
+                    
+</form>
+    </div>
+{% endblock contenido%}
